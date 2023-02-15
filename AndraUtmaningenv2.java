@@ -10,6 +10,6 @@ public class AndraUtmaningenv2 {
             System.out.println(i);
         }
 
-
+System.out.println("Hej!");
     }
 }
