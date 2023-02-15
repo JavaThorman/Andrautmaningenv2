@@ -72,17 +72,15 @@ public class AndraUtmaningenv2 {
 
 
 // 6. Visa alla namn men stoppa körningen vid första person över 40 år.
-        // Slutar köra efter Elena då
+        // Slutar köra efter Elena
         System.out.println("Alla under 40\n------------------");
 
             for (int i = 0; i < namn.length; i++) {
-                System.out.println(namn[i] + "-" + ålder[i]);
-
-                if (ålder[i] >= 40) {
+                if(i <= 40) {
                     System.out.println(namn[i] + "-" + ålder[i]);
-                    continue;
+                    break;
                 }
-                break;
+
             }
             System.out.println("------------------\n");
 
@@ -91,4 +89,3 @@ public class AndraUtmaningenv2 {
 
 
     }
-}
