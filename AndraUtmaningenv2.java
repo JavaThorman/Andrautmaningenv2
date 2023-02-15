@@ -1,36 +1,53 @@
+import java.util.Scanner;
 public class AndraUtmaningenv2 {
-
     public static void main(String[] args) {
 
-        //    for (int i = 0; i < 11; i++) {
-        //      if (i == 5) {
-        //        continue;
-        //  }
-        //System.out.print("Nästa tal är: ");
-        //System.out.println(i); }
+        Scanner input = new Scanner(System.in);
+        //  Du ska använda && (AND), || (OR), Continue, Break, If, For eller While
 
-        // System.out.println("Hej!");
+        // Du har en lista på 10 personer, med namn och ålder.
+        //         Du ska skriva ett program som går igenom listan med personer och skriver ut alla personer som uppfyller vissa kriterier.
 
 
-        // En lärare som granskar elevuppgifter och vill hoppa över en elevs
-        //Svar för att gå vidare till nästa. Här kan break användas för
-        // att avsluta loopen och continue användas för att hoppa över en
-        // specifik iteration.
-        String[] namn = {"Harry Potter", "Hermione Granger", "Ron Weasley", "Luna Lovegood", "Draco Malfoy", "Neville Longbottom", "Ginny Weasley", "Fred Weasley", "George Weasley", "Cho Chang"};
-        String[] svar = {"OK", "OK", "OK", "OK", "", "OK", "", "OK", "", "OK"};
 
 
-        for (int k = 0; k < svar.length; k++) {
-            for (int i = 0; i < namn.length; i++) {
-                if (svar[k].equals("OK")) {
-                    System.out.println(namn[i]);System.out.println(svar[k]);
-                    continue;
-                }
+        //  5. Visa en lista på alla personer som har jämna tal i sin ålder
+        //  6. Visa alla namn men stoppa körningen vid första person över 40 år.
 
-                }
+        //          För att skona dig från tråkdelen så får du en färdig lista här som exempel:
 
+        String[] namn = {"Elena Gilbert", "Stefan Salvatore", "Damon Salvatore", "Caroline Forbes", "Bonnie Bennett", "Tyler Lockwood", "Matt Donovan", "Alaric Saltzman", "Klaus Mikaelson", "Rebekah Mikaelson"};
+        int[] ålder = {17, 162, 177, 17, 17, 22, 19, 41, 1000, 1012};
+        for (int i = 0; i < namn.length; i++) {
+            if (ålder[i] < 20) {
+                // 1. Skriv ut alla personer som är under 20 år.
+                System.out.println("Personer under  20\n------------------");
+                System.out.println(namn[i] + " - " + ålder[i]);
+                System.out.println("------------------\n");
+                break;
             }
         }
+        // 2. Skriv ut alla personer som är 20 år och alla som är under 30 år.
+            for (int i = 0; i < namn.length; i++) {
+                if (ålder[i] <= 29 && ålder[i] > 19) {
+
+                    System.out.println("Personer över 20, under 30\n------------------");
+                    System.out.println(namn[i] + " - " + ålder[i]);
+                    System.out.println("---------------- break");
+                }
+
+
+            }        //  3. Skriv ut alla personer som är yngre än 20 år och alla som är äldre än 29 år.
+        for (int i = 0; i < namn.length; i++) {
+            if (ålder[i] <= 29 && ålder[i] > 19) {
+
+                System.out.println("Personer över 20, under 30\n------------------");
+                System.out.println(namn[i] + " - " + ålder[i]);
+                System.out.println("---------------- break");
+            }
+
+
+        }
+        //  4. Visa namn och ålder på äldsta och yngsta karaktären (1 av varje)
     }
-
-
+}
