@@ -23,7 +23,7 @@ public class AndraUtmaningenv2 {
         System.out.println("------------------\n");
 
 
-        // 2. Skriv ut alla personer som är 20 år och alla som är under 30 år.
+        // 2. Skriv ut al plaersoner som är 20 år och alla som är under 30 år.
         System.out.println("Personer över 20, under 30\n------------------");
         for (int i = 0; i < namn.length; i++) {
             if (ålder[i] >= 20 && ålder[i] < 30) {
